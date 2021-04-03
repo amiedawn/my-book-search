@@ -95,9 +95,9 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className="text-dark" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover' }}>
+      <Jumbotron fluid className="text-dark" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', height: '50vh' }}>
         <Container>
-          <h1>Search for Books!</h1>
+          <h1>Book Hunt:</h1>
           <Form onSubmit={handleFormSubmit}>
             <Form.Row>
               <Col xs={12} md={8}>
@@ -107,12 +107,12 @@ const SearchBooks = () => {
                   onChange={(e) => setSearchInput(e.target.value)}
                   type="text"
                   size="lg"
-                  placeholder="Search for a book"
+                  placeholder="Enter keyword(s)"
                 />
               </Col>
               <Col xs={12} md={4}>
-                <Button type="submit" variant="success" size="lg">
-                  Submit Search
+                <Button type="submit" variant="warning" size="lg">
+                  Submit
                 </Button>
               </Col>
             </Form.Row>
@@ -124,7 +124,7 @@ const SearchBooks = () => {
         <h2>
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`
-            : "Search for a book to begin"}
+            : "Choose a book title or keyword..."}
         </h2>
         <CardColumns>
           {searchedBooks.map((book) => {
