@@ -15,6 +15,7 @@ import { searchGoogleBooks } from "../utils/API";
 import { SAVE_BOOK } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
+import bgimage from '../images/image_background.jpg';
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -94,7 +95,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className="text-light bg-dark">
+      <Jumbotron fluid className="text-dark" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover' }}>
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
