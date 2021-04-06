@@ -1,5 +1,4 @@
 body {
- /* font-family: 'Rubik', sans-serif; */
  font-family: 'Bookman Old Style', sans-serif;
 }
 
@@ -9,8 +8,7 @@ h3,
 h4,
 h5,
 h6 {
- /* font-family: 'Rubik Mono One', sans-serif; */
- font-family: 'Bookman Old Style', sans-serif;
+  font-family: 'Bookman Old Style', sans-serif;
 }
 
 .small {
