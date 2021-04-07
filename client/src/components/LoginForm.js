@@ -63,14 +63,14 @@ const LoginForm = () => {
           <Form.Label htmlFor="email">Email</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter email address"
+            placeholder="Your email"
             name="email"
             onChange={handleInputChange}
             value={userFormData.email}
             required
           />
           <Form.Control.Feedback type="invalid">
-            Email address is required!
+            Email is required!
           </Form.Control.Feedback>
         </Form.Group>
 
@@ -78,7 +78,7 @@ const LoginForm = () => {
           <Form.Label htmlFor="password">Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Enter password"
+            placeholder="Your password"
             name="password"
             onChange={handleInputChange}
             value={userFormData.password}
@@ -91,7 +91,7 @@ const LoginForm = () => {
         <Button
           disabled={!(userFormData.email && userFormData.password)}
           type="submit"
-          variant="warning"
+          variant="success"
         >
           Submit
         </Button>

@@ -15,7 +15,6 @@ import { searchGoogleBooks } from "../utils/API";
 import { SAVE_BOOK } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
-import bgimage from '../images/image_background.jpg';
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -95,9 +94,9 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className="text-dark" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', height: '50vh' }}>
+      <Jumbotron fluid className="text-light bg-dark">
         <Container>
-          <h1>Book Hunt:</h1>
+          <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
             <Form.Row>
               <Col xs={12} md={8}>
@@ -107,12 +106,12 @@ const SearchBooks = () => {
                   onChange={(e) => setSearchInput(e.target.value)}
                   type="text"
                   size="lg"
-                  placeholder="Enter keyword(s)"
+                  placeholder="Search for a book"
                 />
               </Col>
               <Col xs={12} md={4}>
-                <Button type="submit" variant="warning" size="lg">
-                  Submit
+                <Button type="submit" variant="success" size="lg">
+                  Submit Search
                 </Button>
               </Col>
             </Form.Row>
@@ -124,7 +123,7 @@ const SearchBooks = () => {
         <h2>
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`
-            : "Choose a book title or keyword..."}
+            : "Search for a book to begin"}
         </h2>
         <CardColumns>
           {searchedBooks.map((book) => {
