@@ -15,7 +15,7 @@ const AppNavbar = () => {
       <Navbar bg='info' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+            <span role="img" aria-label="Books Emoji">📚 My Google Book Hunt</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
