@@ -14,15 +14,16 @@
 
 ## Description: 
 
-This is a book search application that uses the Google Books API. Any user can search for books based on keywords. A logged-in user can save books to a list in his or her account.<br><br>This application was built as an assignment in a full-stack web development boot camp through the University of Arizona. The fully-working application was provided by the boot camp, and my assignment was to refactor it, to replace the existing RESTful API with an Apollo Server that uses GraphQL queries and mutations to fetch and modify data.
+This is a book search application that uses the Google Books API. Any user can search for books based on keywords. A logged-in user can save books to a list in his or her account.<br><br>This application was built as an assignment in a full-stack web development boot camp through the University of Arizona. The fully-working application was provided by the boot camp, and my assignment was to refactor it, to replace the existing RESTful API with an Apollo Server that uses GraphQL queries and mutations to fetch and modify data. I also re-designed the front-end.
 
 ## Installation Instructions:
 
-This application can be cloned at https://github.com/amiedawn/book-search .
+This application can be cloned at https://github.com/amiedawn/my-book-search/tree/master .
 
 ## Usage Information:
 
-To view this deployed application, simply go to https://immense-sierra-95993.herokuapp.com/ . Here is a preview of the search screen:<br><br>![Screenshot](./client/public/search-query.png) <br><br>Here is a screenshot of a user's saved list:<br><br>![Screenshot](./client/public/saved-books.png) 
+To view this deployed application, simply go to https://blooming-dawn-50560.herokuapp.com
+ . Here is a preview of the search screen:<br><br>![Screenshot](./client/public/search-query.png) <br><br>Here is a screenshot of a user's saved list:<br><br>![Screenshot](./client/public/saved-books.png) 
 
 ## License:
 
